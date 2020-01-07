@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+body {
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    /* background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+form {
+    margin-top: 3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+form input[name="city"],
+form input[name="country"] {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    outline: none;
+    text-transform: capitalize;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form input[name="city"]:focus {
+    border-bottom: 2px solid #fff;
+    box-shadow: none;
+    background-color: transparent;
+    color: #fff;
+    text-transform: capitalize;
 }
+form input[name="country"]:focus {
+    border-bottom: 2px solid #fff;
+    box-shadow: none;
+    background-color: transparent;
+    color: #fff;
+    text-transform: capitalize;
 
-.App-link {
-  color: #61dafb;
+
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1, h2, h3, h4, h5, h6, i {
+    color: #fff;
+}
+h4 {
+    text-transform: capitalize;
+}
+::placeholder {
+    color: #fff !important;
 }
